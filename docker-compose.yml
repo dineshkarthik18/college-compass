@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: college_user
+      POSTGRES_PASSWORD: college_password
+      POSTGRES_DB: college_compass
+    ports:
+      - "5432:5432"
+    volumes:
+      - college_postgres:/var/lib/postgresql/data
+
+volumes:
+  college_postgres:
