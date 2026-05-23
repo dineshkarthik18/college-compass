@@ -2,6 +2,12 @@
 
 A production-ready MVP for college discovery, shortlisting, and decision-making. Built with Next.js, Tailwind CSS, REST API routes, Prisma, PostgreSQL, authentication, saved colleges, and side-by-side comparison.
 
+## About This Project
+
+College Compass is a full-stack web application designed to help students explore colleges, compare options, and shortlist institutions before making an admission decision. The project focuses on a practical student workflow: searching colleges, applying filters, opening detail pages, comparing multiple colleges side by side, signing in, and saving preferred colleges to a personal list.
+
+The application is built as a database-driven MVP with reusable UI components, REST-style API routes, authentication, and relational data modeling. It demonstrates how a college discovery platform can combine frontend usability with backend features such as secure sessions, filtered queries, saved records, and structured college/course/review data.
+
 ## Features
 
 - College listing with search, location/course/fees filters, pagination, loading states, and empty states.
@@ -17,6 +23,20 @@ A production-ready MVP for college discovery, shortlisting, and decision-making.
 - Backend: Next.js REST route handlers, TypeScript, Zod
 - Database: PostgreSQL with Prisma ORM
 - Auth: bcrypt password hashing and JOSE JWT cookies
+
+## Technologies Used In Detail
+
+- **Next.js App Router:** Used for routing, layouts, server-rendered pages, dynamic college detail pages, and API route handlers.
+- **React:** Used to build reusable UI components such as college cards, filters, comparison views, authentication forms, and saved-college controls.
+- **TypeScript:** Provides type safety across frontend components, API handlers, Prisma data access, and shared utility functions.
+- **Tailwind CSS:** Handles responsive styling, spacing, layout, cards, forms, buttons, and dashboard-like UI sections.
+- **Prisma ORM:** Defines the database schema and manages queries for users, colleges, courses, reviews, and saved colleges.
+- **PostgreSQL:** Stores relational data for college discovery, including one-to-many and many-to-many style relationships.
+- **Zod:** Validates incoming API request data and keeps backend inputs consistent.
+- **bcryptjs:** Hashes user passwords before storage.
+- **JOSE JWT:** Creates and verifies secure authentication tokens stored in HTTP-only cookies.
+- **Docker Compose:** Provides a local PostgreSQL setup for development and testing.
+- **Vercel:** Suitable for deploying the Next.js frontend and API routes.
 
 ## Local Setup
 
